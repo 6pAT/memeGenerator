@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="d-inline" *ngFor="let oneMeme of memes; let i = index;">
+
+    <img class="image" src="{{oneMeme.url}}" alt="" [routerLink]="['meme', i]">
+
+  </div>
+</div>
+
