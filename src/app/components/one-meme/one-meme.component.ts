@@ -104,18 +104,18 @@ export class OneMemeComponent implements OnInit {
            maxWidth:number, lineHeight:number,
            fromBottom:boolean) {
 
-    var pushMethod = (fromBottom) ? 'unshift' : 'push';
+    let pushMethod = (fromBottom) ? 'unshift' : 'push';
     lineHeight = (fromBottom) ? -lineHeight : lineHeight;
 
-    var lines = [];
-    var y:number = y;
-    var line:string = '';
+    let lines = [];
+    let y:number = y;
+    let line:string = '';
     if (text !== undefined) {
-      var words = text.toUpperCase().split(' ');
-      for (var n: number = 0; n < words.length; n++) {
-        var testLine = line + ' ' + words[n];
-        var metrics = context.measureText(testLine);
-        var testWidth = metrics.width;
+      let words = text.toUpperCase().split(' ');
+      for (let n: number = 0; n < words.length; n++) {
+        let testLine = line + ' ' + words[n];
+        let metrics = context.measureText(testLine);
+        let testWidth = metrics.width;
 
         if (testWidth > maxWidth) {
           lines[pushMethod](line);
