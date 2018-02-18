@@ -16,10 +16,8 @@ export class MemesGeneratorComponent implements OnInit {
 
   ngOnInit() {
     if (this.memeServise.isMemes()) {
-      console.log("localstorege");
       this.memes = this.memeServise.getMemes();
     }else{
-      console.log("download");
       this.memeServise.downloadMemes().subscribe(memes=>{
         this.memes = memes;
         this.memeServise.saveMemes(this.memes);

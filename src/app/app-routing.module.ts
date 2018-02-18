@@ -6,7 +6,7 @@ import {OneMemeComponent} from "./components/one-meme/one-meme.component";
 const ROUTES: Routes = [
   {path: '', component: MemesGeneratorComponent},
   {path: 'meme/:id', component: OneMemeComponent}
-]
+];
 
 @NgModule({
   imports: [

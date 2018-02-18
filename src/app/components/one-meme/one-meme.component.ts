@@ -53,7 +53,7 @@ export class OneMemeComponent implements OnInit {
     this.img.setAttribute('crossOrigin', 'anonymous');
     this.img.onload = function () {
       drawMeme();
-    }
+    };
 
     function drawMeme() {
       self.ctx.drawImage(self.img, 0, 0, self.meme.width, self.meme.height);

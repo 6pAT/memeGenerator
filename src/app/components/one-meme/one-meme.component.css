@@ -3,12 +3,10 @@
   flex-direction: column;
   margin: auto;
   align-items: center;
-
 }
 
 .inputs input{
   display: inline-block;
-  margin: 0px 0px 10px 10px;
+  margin: 0 0 10px 10px;
   width: 100%;
-
 }
